@@ -92,6 +92,8 @@ This guide outlines the step-by-step process of setting up **Active Directory** 
 
 ![Screenshot 2025-03-19 165454](https://github.com/user-attachments/assets/e910316b-ec0e-49ae-8750-f3c2469b8244)
 
+Communication was at first unsuccessful due to dc-1's firewall settings not being completely turned off. 
+After ensuring the firewall settings were off, client-1 and dc-1 were able to communicate.
 
 ### **5. Verify DNS Configuration on Client-1**
 - Open **PowerShell** and run:
@@ -99,7 +101,9 @@ This guide outlines the step-by-step process of setting up **Active Directory** 
   ipconfig /all
   ```
 - Ensure the **DNS Server** field shows `DC-1`'s **Private IP Address**.
-![Screenshot 2025-03-19 165756](https://github.com/user-attachments/assets/58c9fc68-d881-4c90-96bd-fd5d1b78cb5a)
+
+![Screenshot 2025-03-19 165756](https://github.com/user-attachments/assets/9a947e37-6391-4edb-99ab-d501c4d15a3d)
+
 
 ---
 
